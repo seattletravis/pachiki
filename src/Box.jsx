@@ -1,4 +1,4 @@
-export function Box() {
+export default function Box() {
 	return (
 		<mesh>
 			<boxGeometry />
