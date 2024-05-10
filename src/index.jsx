@@ -2,15 +2,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { Canvas } from '@react-three/fiber';
 import './styles.css';
-
-function Box() {
-	return (
-		<mesh>
-			<boxGeometry />
-			<meshBasicMaterial color={0x00ff00} wireframe />
-		</mesh>
-	);
-}
+import { Box } from './Box';
 
 function App() {
 	return (
