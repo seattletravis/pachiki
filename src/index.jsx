@@ -12,10 +12,16 @@ function Box() {
 	);
 }
 
-createRoot(document.getElementById('root')).render(
-	<StrictMode>
+function App() {
+	return (
 		<Canvas camera={{ position: [0, 0, 2] }}>
 			<Box />
 		</Canvas>
+	);
+}
+
+createRoot(document.getElementById('root')).render(
+	<StrictMode>
+		<App />
 	</StrictMode>
 );
